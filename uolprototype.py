@@ -235,11 +235,11 @@ def getComplianceSpec(compliance_required):
     
     ### Open the appropriate JSON document for the specified compliance standard
     if compliance_required == "PCIDSS":
-        compliance_source = "/home/paul/Documents/UoLTesting/csaccm_pcidss.json"
+        compliance_source = "csaccm_pcidss.json"
     elif compliance_required == "HIPAA":
-        compliance_source = "/home/paul/Documents/UoLTesting/csaccm_hipaa.json"
+        compliance_source = "csaccm_hipaa.json"
     elif compliance_required == "NOSPEC":
-        compliance_source = "/home/paul/Documents/UoLTesting/csaccm_nospec.json"
+        compliance_source = "csaccm_nospec.json"
     else:
         return("ERROR: Unknown compliance spec")
     file = open(compliance_source)
